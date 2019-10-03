@@ -29,7 +29,7 @@ $(() => {
           xdAutoBreaker_password: $(id_passwordInput).val()
         },
         function(msg) {
-          console.log('SUCCESS! xd-preview passwoerd was broken.');
+          console.log(`SUCCESS! Broke through XD-preview password`);
           // とりあえず5秒後に閉じる
           closeThisWindowAfterSec(5);
           $(id_resetButton).on('click', ()=>{
