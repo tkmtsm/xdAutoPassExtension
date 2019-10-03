@@ -1,0 +1,21 @@
+{
+  "name": "xdAutoBreaker",
+  "author": "TakumiTashima",
+  "manifest_version": 2,
+  "version": "1.0",
+  "browser_action": {
+    "default_title": "xdAutoPassSystem",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [
+       {
+           "matches": ["<all_urls>"],
+           "js": ["jquery.min.js", "content_script.js"],
+           "run_at": "document_end"
+       }
+   ]
+}
