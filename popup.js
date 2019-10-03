@@ -29,9 +29,9 @@ $(() => {
           xdAutoBreaker_password: $(id_passwordInput).val()
         },
         function(msg) {
-          console.log('SUCESS! xd-preview passwoerd was brokened.');
+          console.log('SUCCESS! xd-preview passwoerd was broken.');
           // とりあえず5秒後に閉じる
-          closeThisWindow(5);
+          closeThisWindowAfterSec(5);
           $(id_resetButton).on('click', ()=>{
             clearTimeout(timeout_closeThisWindow);
           });
@@ -60,7 +60,7 @@ $(() => {
   // }
 });
 
-function closeThisWindow(sec_after) {
+function closeThisWindowAfterSec(sec_after) {
   timeout_closeThisWindow = setTimeout(()=>{
     window.close();
   },sec_after * 1000);
