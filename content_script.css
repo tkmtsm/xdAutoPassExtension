@@ -1,7 +1,27 @@
+html {
+  color: #FFD9F2;
+  background: #2E001F;
+  border: 1px solid #FF27BE;
+}
+
 body {
   width:400px;
 }
+
 h1 {
   font-size: 14px;
   font-weight: 400;
+}
+
+input {
+  width: 200px;
+  padding: 2px;
+  border: 1px solid #FF27BE;
+}
+
+button {
+  color: #FFD9F2;
+  background: #2E001F;
+  border: 1px solid #FF27BE;
+  border-radius: 4px;
 }
