@@ -2,7 +2,7 @@
   "name": "xdAutoBreaker",
   "author": "TakumiTashima",
   "manifest_version": 2,
-  "version": "1.0",
+  "version": "1.01",
   "browser_action": {
     "default_title": "xdAutoPassExtension",
     "default_popup": "popup.html"
